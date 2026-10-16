@@ -8,8 +8,10 @@ import {
 
 export const MenubarComponent = () => {
     return (
-        <div className="p-4">
+        <div className="p-5">
               <Menubar>
+
+
                 <MenubarMenu>
                   <MenubarTrigger>File</MenubarTrigger>
                   <MenubarContent>
