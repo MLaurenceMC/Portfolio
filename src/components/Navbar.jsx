@@ -10,25 +10,25 @@ import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
     return (
-        <header className="fixed inset-x-0 top-0 z-50 border-b bg-background/90 backdrop-blur-md">
-      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-3">
-        // Nav left content 
+    <header className="fixed flex h-[10vh] inset-x-0 top-0 z-50 border-b bg-background/90 backdrop-blur-md">
+      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6">
+        {/* // Nav left content  */}
         <div className="flex min-w-0 flex-1 items-center gap-4">
-        // Name card 
+        {/* // Name card  */}
           <a href="#home" className="flex shrink-0 items-center gap-2">
             <UserCircle size={34} weight="regular" />
 
             <div className="hidden sm:block">
-              <p className="text-sm font-semibold leading-tight">
-                Mark Castillo
+              <p className="text-xl font-semibold leading-tight">
+                Mark Laurence Castillo
               </p>
-              <p className="text-xs text-muted-foreground">
+              {/* <p className="text-xs text-muted-foreground">
                 Software Developer
-              </p>
+              </p> */}
             </div>
           </a>
 
-        // Search bar 
+        {/* // Search bar  */}
           {/* <form onSubmit={handleSearch} className="w-full max-w-xs">
             <div className="relative">
               <MagnifyingGlass
@@ -48,15 +48,47 @@ export const Navbar = () => {
           </form> */}
         </div>
 
-        // Nav right content 
+        {/* // Nav right content  */}
         <div className="flex shrink-0 items-center gap-5">
 
-        // Resume 
-          <Button asChild size="sm">
+          {/* about */}
+          <Button asChild size="lg" className="px-4">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              About
+            </a>
+              <ArrowUpRight size={16} />
+          </Button>
+
+          {/* skills */}
+          <Button asChild size="lg" className="px-4">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              Skills
+            </a>
+              <ArrowUpRight size={16} />
+          </Button>
+
+          {/* Projects */}
+          <Button asChild size="lg" className="px-4">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              Projects
+            </a>
+              <ArrowUpRight size={16} />
+          </Button>
+
+          {/* Contact */}
+          <Button asChild size="lg" className="px-4">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              Contacts
+            </a>
+              <ArrowUpRight size={16} />
+          </Button>
+
+        {/* // Resume  */}
+          <Button asChild size="lg" className="px-4">
             <a href="/resume.pdf" target="_blank" rel="noreferrer">
               Resume
-              <ArrowUpRight size={16} />
             </a>
+              <ArrowUpRight size={16} />
           </Button>
         </div>
       </nav>
